@@ -4,6 +4,10 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ProjectListing from "./Components/ProjectListing";
 import Home from "./pages/Home";
+import Footer from "./Components/Footer";
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 const projectsList = [
   {
     title: "A Blog's Life",
@@ -83,8 +87,6 @@ const projectsList = [
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 function App() {
   // export default function App() { //FIXME: ? should I do this and remove the export below?
   return (
@@ -116,6 +118,7 @@ function App() {
               <Home />
             </Route>
           </Switch>
+          <Footer></Footer>
         </div>
       </Router>
     </div>
