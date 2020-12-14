@@ -28,7 +28,10 @@ function ProjectListing({ project }) {
         </div>
         <div className="row ">
           <a className="github-link" target=" _blank" href={project.gitHubLink}>
-            <div className="text-info rounded bg-dark  p-2 m-1"> GitHub Repo </div>
+            <div style={{ width: "10rem", textAlign: "center" }} className="text-info rounded bg-dark  p-2 m-1">
+              {" "}
+              GitHub Repo{" "}
+            </div>
           </a>
         </div>
       </div>
