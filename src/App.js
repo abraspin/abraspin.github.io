@@ -8,8 +8,21 @@ import projectsList from "./projects.json";
 import NavBar from "./Components/NavBar";
 import ContactMe from "./pages/ContactMe";
 import Resume from "./pages/Resume";
+import { useEffect, useState } from "react";
 
 function App() {
+  // const [pageSelected, setPageSelected] = useState("");
+
+  // useEffect(() => {
+  //   console.log(
+  //     "🚀 ~ file: App.js ~ line 40 ~ useEffect ~ window.location.pathname.split('/')[1];",
+  //     window.location.pathname.split("/")[1]
+  //   );
+  //   const currentPage = window.location.pathname.split("/")[1];
+  //   setPageSelected(currentPage);
+  //   console.log("🚀 ~ file: App.js ~ line 38 ~ useEffect ~ currentPage", currentPage);
+  // }, []);
+
   return (
     //FIXME:TODO: There is surely a better way to style the whole thing
     <div>
@@ -21,17 +34,22 @@ function App() {
             renders the first one that matches the current URL. */}
         <Switch>
           <Route exact path="/Resume">
+            {console.log("hi")}
+            {/* {setPageSelected("Resume")} */}
             <Resume />
           </Route>
           <Route exact path="/Projects">
+            {/* {setPageSelected("Projects")} */}
             {projectsList.map((project) => {
               return <ProjectListing project={project}></ProjectListing>;
             })}
           </Route>
           <Route exact path="/ContactMe">
+            {/* {setPageSelected("ContactMe")} */}
             <ContactMe />
           </Route>
           <Route exact path="/">
+            {/* {setPageSelected("Home")} */}
             <Home />
           </Route>
         </Switch>

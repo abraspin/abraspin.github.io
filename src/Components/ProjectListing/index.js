@@ -7,11 +7,11 @@ function ProjectListing({ project }) {
   project.technologiesUsed.forEach((technology) => {
     technologiesUsed.push(technology);
   });
-  console.log("technologiesUsed", technologiesUsed);
+  // console.log("technologiesUsed", technologiesUsed);
 
   return (
     <article className="jumbotron project-listing row py-3">
-      {console.log("technologiesUsed", technologiesUsed)}
+      {/* {console.log("technologiesUsed", technologiesUsed)} */}
       <div className="col-md-9">
         <div className="row">
           <h3 className="mb-0">{project.title}</h3>

@@ -5,7 +5,7 @@ function Home() {
     <div>
       <div className="container">
         <div className="row">
-          <div className="col-md-6">
+          <div className="col-md-6 mt-1">
             <div className="card" style={{ width: "100%" }}>
               <img id="profile-pic" src="/images/my-face.PNG" className="card-img-top" alt="..."></img>
               <div className="card-body">
