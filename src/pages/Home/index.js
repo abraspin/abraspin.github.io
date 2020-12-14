@@ -7,7 +7,7 @@ function Home() {
         <div className="row">
           <div className="col-md-6">
             <div className="card" style={{ width: "100%" }}>
-              <img id="profile-pic" src="./assets/images/my-face.PNG" className="card-img-top" alt="..."></img>
+              <img id="profile-pic" src="/images/my-face.PNG" className="card-img-top" alt="..."></img>
               <div className="card-body">
                 <h3 className="card-title">Abraham Spindel</h3>
                 <hr></hr>
