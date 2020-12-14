@@ -3,7 +3,7 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ProjectListing from "./Components/ProjectListing";
-
+import Home from "./pages/Home";
 const projectsList = [
   {
     title: "A Blog's Life",
@@ -88,45 +88,37 @@ const projectsList = [
 function App() {
   // export default function App() { //FIXME: ? should I do this and remove the export below?
   return (
-    <Router>
-      <div>
-        {/* <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/users">Users</Link>
-            </li>
-          </ul> */}
-        <NavBar> </NavBar>
+    //FIXME:TODO: There is surely a better way to style the whole thing
+    <div className="appBody">
+      <Router>
+        <div>
+          <NavBar> </NavBar>
 
-        {/* A <Switch> looks through its children <Route>s and
+          {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-        <Switch>
-          <Route exact path="/Resume">
-            <Resume />
-          </Route>
-          <Route exact path="/Projects">
-            {/* {projectsList.map((project) => (
+          <Switch>
+            <Route exact path="/Resume">
+              <Resume />
+            </Route>
+            <Route exact path="/Projects">
+              {/* {projectsList.map((project) => (
              return <ProjectListing project={project}></ProjectListing>
             )} */}
 
-            {projectsList.map((project) => {
-              return <ProjectListing project={project}></ProjectListing>;
-            })}
-          </Route>
-          <Route exact path="/ContactMe">
-            <ContactMe />
-          </Route>
-          <Route exact path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
+              {projectsList.map((project) => {
+                return <ProjectListing project={project}></ProjectListing>;
+              })}
+            </Route>
+            <Route exact path="/ContactMe">
+              <ContactMe />
+            </Route>
+            <Route exact path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </div>
+      </Router>
+    </div>
   );
 }
 
@@ -197,12 +189,13 @@ function NavBar() {
   );
 }
 
-function Home() {
-  return <h2>Home</h2>;
-}
-
 function Resume() {
-  return <h2>Resume</h2>;
+  return (
+    <h1>Hi I'm the Resume Page</h1>
+    //   <section>
+    //     <iframe className="embedResume" src="./assets/Abraham-Spindel-Resume.pdf"></iframe>
+    //   </section>
+  );
 }
 
 function ContactMe() {
