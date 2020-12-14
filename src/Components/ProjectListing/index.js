@@ -1,5 +1,6 @@
 import React from "react";
 // import screenshot from "./Components/ProjectListing/screenshots/blogs-life-app-screenshot.png";
+import "./style.css";
 
 function ProjectListing({ project }) {
   const technologiesUsed = [];
