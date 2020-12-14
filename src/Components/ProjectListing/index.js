@@ -11,15 +11,16 @@ function ProjectListing({ project }) {
 
   return (
     <article className="jumbotron project-listing row py-3">
-      {/* {console.log("technologiesUsed", technologiesUsed)} */}
+      {console.log("technologiesUsed", technologiesUsed)}
       <div className="col-md-9">
         <div className="row">
           <h3 className="mb-0">{project.title}</h3>
         </div>
         <hr className="my-2 mr-5"></hr>
         <div className="row">
-          {technologiesUsed.forEach((technology) => {
-            return <div className="border px-1 m-1"> {technology} </div>;
+          {technologiesUsed.map((technology) => {
+            console.log(technology);
+            return <div className="border button  px-1 m-1"> {technology} </div>;
           })}
         </div>
         <hr className="my-2 mr-5"></hr>
