@@ -1,89 +1,13 @@
 import logo from "./logo.svg";
-import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 import ProjectListing from "./Components/ProjectListing";
 import Home from "./pages/Home";
 import MyFooter from "./Components/MyFooter";
+import projectsList from "./projects.json";
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-const projectsList = [
-  {
-    title: "A Blog's Life",
-    technologiesUsed: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "jQuery",
-      "MaterializeCSS",
-      "PassportJS",
-      "NodeJS",
-      "ExpressJS",
-      "MySQL",
-      "BCrypt",
-      "HandlebarsJS",
-    ],
-    description:
-      "A full-stack weblog app built on NodeJS and powered by Heroku. Share your thoughts, find new friends, and give feedback to other's content in the form of comments and likes!",
-    screenshot: "",
-    gitHubLink: "https://github.com/Cenzo-cmd/A-Blogs-Life",
-    deployedLink: "https://its-a-blogs-life.herokuapp.com",
-  },
-  {
-    title: "Burger Logger",
-    technologiesUsed: ["HTML", "CSS", "JavaScript", "jQuery", "MaterializeCSS", "NodeJS", "ExpressJS", "MySQL"],
-    description:
-      " A full-stack deployed app built on NodeJS and powered by Heroku and a home-made ORM. Keep track of every burger you ever wanted to eat, and keep track of which you've had!",
-    screenshot: "",
-    gitHubLink: "https://github.com/abraspin/burger",
-    deployedLink: "https://blooming-citadel-89153.herokuapp.com",
-  },
-  {
-    title: "SHAKR App",
-    technologiesUsed: ["HTML", "CSS", "JavaScript", "Bulma.CSS", "jQuery"],
-    description:
-      "Enter your ingredients to see which recipes you can make! JS tracks viable cocktail objects, theCocktailDB.com and Google Maps API utilized.",
-    screenshot: "",
-    gitHubLink: "https://github.com/abraspin/Project-1-The-Silent-Marvels-/",
-    deployedLink: "https://abraspin.github.io/Project-1-The-Silent-Marvels-/",
-  },
-  {
-    title: "Weather Dashboard",
-    technologiesUsed: ["HTML", "CSS", "JavaScript", "Bootstrap", "jQuery"],
-    description: "Weather dashboard app. Utilizes OpenWeather API and renders page on demand, stores searches locally.",
-    screenshot: "",
-    gitHubLink: "https://github.com/abraspin/Weather-Dashboard/",
-    deployedLink: "https://abraspin.github.io/Weather-Dashboard",
-  },
-  {
-    title: "UPDATEME!!!!!!!!!!!!! My Website",
-    technologiesUsed: ["HTML", "CSS", "Bootstrap"],
-    description: " A website containing my information. In fact...It's this very site!",
-
-    screenshot: "",
-    gitHubLink: "https://github.com/abraspin/abraspin.github.io",
-    deployedLink: "https://abraspin.github.io/",
-  },
-  {
-    title: "Workday Scheduler",
-    technologiesUsed: ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "Moment.JS"],
-    description:
-      "   A super simple daily calendar app. Save your activities to the hour - line items are color coded by the time of day!",
-    screenshot: "",
-    gitHubLink: "https://github.com/abraspin/Work-Day-Scheduler",
-    deployedLink: "https://abraspin.github.io/Work-Day-Scheduler",
-  },
-  {
-    title: "Password Generator",
-    technologiesUsed: ["HTML", "CSS", "JavaScript"],
-    description:
-      " Generates a secure password using psuedo-random numbers and user inputs to determine desired password length and character type preference.",
-    screenshot: "",
-    gitHubLink: "https://github.com/abraspin/password-generator",
-    deployedLink: "https://abraspin.github.io/password-generator",
-  },
-];
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -93,33 +17,29 @@ function App() {
     //FIXME:TODO: There is surely a better way to style the whole thing
     <div>
       <Router>
-        <div>
-          <NavBar> </NavBar>
+        {/* <div> */}
+        <NavBar> </NavBar>
 
-          {/* A <Switch> looks through its children <Route>s and
+        {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-          <Switch>
-            <Route exact path="/Resume">
-              <Resume />
-            </Route>
-            <Route exact path="/Projects">
-              {/* {projectsList.map((project) => (
-             return <ProjectListing project={project}></ProjectListing>
-            )} */}
-
-              {projectsList.map((project) => {
-                return <ProjectListing project={project}></ProjectListing>;
-              })}
-            </Route>
-            <Route exact path="/ContactMe">
-              <ContactMe />
-            </Route>
-            <Route exact path="/">
-              <Home />
-            </Route>
-          </Switch>
-          <MyFooter></MyFooter>
-        </div>
+        <Switch>
+          <Route exact path="/Resume">
+            <Resume />
+          </Route>
+          <Route exact path="/Projects">
+            {projectsList.map((project) => {
+              return <ProjectListing project={project}></ProjectListing>;
+            })}
+          </Route>
+          <Route exact path="/ContactMe">
+            <ContactMe />
+          </Route>
+          <Route exact path="/">
+            <Home />
+          </Route>
+        </Switch>
+        <MyFooter></MyFooter>
+        {/* </div> */}
       </Router>
     </div>
   );
@@ -194,10 +114,10 @@ function NavBar() {
 
 function Resume() {
   return (
-    <h1>Hi I'm the Resume Page</h1>
-    //   <section>
-    //     <iframe className="embedResume" src="./assets/Abraham-Spindel-Resume.pdf"></iframe>
-    //   </section>
+    // <h1>Hi I'm the Resume Page</h1>
+    <section>
+      <iframe className="embedResume" src="/assets/Abraham-Spindel-Resume.pdf"></iframe>
+    </section>
   );
 }
 
