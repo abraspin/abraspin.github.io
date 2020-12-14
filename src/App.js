@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ProjectListing from "./Components/ProjectListing";
 import Home from "./pages/Home";
-import Footer from "./Components/Footer";
+import MyFooter from "./Components/MyFooter";
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -91,7 +91,7 @@ function App() {
   // export default function App() { //FIXME: ? should I do this and remove the export below?
   return (
     //FIXME:TODO: There is surely a better way to style the whole thing
-    <div className="appBody">
+    <div>
       <Router>
         <div>
           <NavBar> </NavBar>
@@ -118,7 +118,7 @@ function App() {
               <Home />
             </Route>
           </Switch>
-          <Footer></Footer>
+          <MyFooter></MyFooter>
         </div>
       </Router>
     </div>

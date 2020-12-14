@@ -1,4 +1,4 @@
-function Footer() {
+function MyFooter() {
   return (
     <div>
       <footer className="page-footer font-small cyan darken-3">
@@ -52,4 +52,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default MyFooter;
