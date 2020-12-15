@@ -78,7 +78,7 @@ function Home() {
                 Contact
               </a> */}
               <Link to="/ContactMe" className="nav-link btn  link-button hvr-grow">
-                Contact Me
+                Contact
               </Link>
             </div>
           </aside>
