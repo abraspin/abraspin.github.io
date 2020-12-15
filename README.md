@@ -47,7 +47,7 @@ Please contact me if you find an issue or have a suggestion for future developme
 
 
 
-Just visit [the GitHub Pages deployed app](https://abraspin.github.io/) to begin!  
+Just visit [the GitHub Pages deployed app](https://abraspin.github.io/)!
 
 
 
