@@ -8,7 +8,7 @@ import projectsList from "./projects.json";
 import NavBar from "./Components/NavBar";
 import ContactMe from "./pages/ContactMe";
 import Resume from "./pages/Resume";
-import { useEffect, useState } from "react";
+import { useEffect, useState, Fragment } from "react";
 
 function App() {
   //TODO: following code for passing active page to navbar, currently non-functional
@@ -24,33 +24,33 @@ function App() {
   // }, []);
 
   return (
-    <div>
-      <Router>
-        <NavBar> </NavBar>
+    <Fragment>
+      <div className="content">
+        <Router>
+          <NavBar> </NavBar>
 
-        {/* A <Switch> looks through its children <Route>s and
+          {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-        <Switch>
-          <Route exact path="/Resume">
-            <Resume />
-          </Route>
-          <Route exact path="/Projects">
-            {projectsList.map((project) => {
-              return <ProjectListing project={project}></ProjectListing>;
-            })}
-          </Route>
-          <Route exact path="/ContactMe">
-            <ContactMe />
-          </Route>
-          <Route exact path="/">
-            <Home />
-          </Route>
-        </Switch>
-        <MyFooter></MyFooter>
-        <br></br>
-        <br></br>
-      </Router>
-    </div>
+          <Switch>
+            <Route exact path="/Resume">
+              <Resume />
+            </Route>
+            <Route exact path="/Projects">
+              {projectsList.map((project) => {
+                return <ProjectListing project={project}></ProjectListing>;
+              })}
+            </Route>
+            <Route exact path="/ContactMe">
+              <ContactMe />
+            </Route>
+            <Route exact path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </Router>
+      </div>
+      <MyFooter></MyFooter>
+    </Fragment>
   );
 }
 
