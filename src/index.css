@@ -6,7 +6,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
 }
 
 code {
@@ -34,3 +33,15 @@ body {
   border: 0px;
 }
 
+
+
+
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1
+}

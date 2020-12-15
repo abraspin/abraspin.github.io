@@ -7,7 +7,7 @@ function MyFooter() {
 
       <div className="copyright-wrapper">
         <a href={"/"}>
-          <span className="footer-copyright text-center py-3">2020 Abraham Spindel</span>
+          <span className="footer-copyright text-center">2020 Abraham Spindel</span>
         </a>
       </div>
 

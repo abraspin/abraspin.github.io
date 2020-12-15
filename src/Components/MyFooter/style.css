@@ -1,9 +1,11 @@
 footer {
-    position : fixed;
-    bottom: 0;
+     /* position : fixed;
+    bottom: 0; */
+    /* z-index: 1;  */
+
+
     min-height: 5vh;
     width:100%;
-    z-index: 1;
     background-color: gray;
     margin-top:2%;
     padding-top: .5rem;
