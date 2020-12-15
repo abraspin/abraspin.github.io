@@ -10,7 +10,7 @@ function ProjectListing({ project }) {
   // console.log("technologiesUsed", technologiesUsed);
 
   return (
-    <div className="jumbotron project-listing row py-3">
+    <div className="jumbotron project-listing row py-3 my-4">
       <div className="col-md-9">
         <div className="row">
           <h3 className="mb-0">{project.title}</h3>
