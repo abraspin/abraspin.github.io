@@ -24,7 +24,6 @@ function App() {
   // }, []);
 
   return (
-    //FIXME:TODO: There is surely a better way to style the whole thing
     <div>
       <Router>
         {/* <div> */}
@@ -34,22 +33,17 @@ function App() {
             renders the first one that matches the current URL. */}
         <Switch>
           <Route exact path="/Resume">
-            {console.log("hi")}
-            {/* {setPageSelected("Resume")} */}
             <Resume />
           </Route>
           <Route exact path="/Projects">
-            {/* {setPageSelected("Projects")} */}
             {projectsList.map((project) => {
               return <ProjectListing project={project}></ProjectListing>;
             })}
           </Route>
           <Route exact path="/ContactMe">
-            {/* {setPageSelected("ContactMe")} */}
             <ContactMe />
           </Route>
           <Route exact path="/">
-            {/* {setPageSelected("Home")} */}
             <Home />
           </Route>
         </Switch>

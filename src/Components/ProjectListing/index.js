@@ -18,7 +18,6 @@ function ProjectListing({ project }) {
         <hr className="my-2 mr-5"></hr>
         <div className="row">
           {technologiesUsed.map((technology) => {
-            console.log(technology);
             return (
               <div style={{ width: "auto" }} className="border tech-used-icon px-1 m-1">
                 {technology}
