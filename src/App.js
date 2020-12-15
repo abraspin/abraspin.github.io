@@ -11,8 +11,8 @@ import Resume from "./pages/Resume";
 import { useEffect, useState } from "react";
 
 function App() {
+  //TODO: following code for passing active page to navbar, currently non-functional
   // const [pageSelected, setPageSelected] = useState("");
-
   // useEffect(() => {
   //   console.log(
   //     "🚀 ~ file: App.js ~ line 40 ~ useEffect ~ window.location.pathname.split('/')[1];",
@@ -26,7 +26,6 @@ function App() {
   return (
     <div>
       <Router>
-        {/* <div> */}
         <NavBar> </NavBar>
 
         {/* A <Switch> looks through its children <Route>s and
@@ -48,7 +47,7 @@ function App() {
           </Route>
         </Switch>
         <MyFooter></MyFooter>
-        {/* </div> */}
+        <br></br>
       </Router>
     </div>
   );

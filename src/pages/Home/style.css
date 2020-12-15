@@ -9,7 +9,6 @@
   max-height: 200px;
   margin: 10px;
   text-align: center;
-  /* ****why does this work to keep the picture inside the card at XS windows width? */
   width: 80%;
 }
 
