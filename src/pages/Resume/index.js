@@ -1,3 +1,4 @@
+import "./style.css";
 function Resume() {
   return (
     // <h1>Hi I'm the Resume Page</h1>
