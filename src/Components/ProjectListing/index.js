@@ -10,8 +10,7 @@ function ProjectListing({ project }) {
   // console.log("technologiesUsed", technologiesUsed);
 
   return (
-    <article className="jumbotron project-listing row py-3">
-      {console.log("technologiesUsed", technologiesUsed)}
+    <div className="jumbotron project-listing row py-3">
       <div className="col-md-9">
         <div className="row">
           <h3 className="mb-0">{project.title}</h3>
@@ -22,8 +21,7 @@ function ProjectListing({ project }) {
             console.log(technology);
             return (
               <div style={{ width: "auto" }} className="border tech-used-icon px-1 m-1">
-                {" "}
-                {technology}{" "}
+                {technology}
               </div>
             );
           })}
@@ -33,10 +31,9 @@ function ProjectListing({ project }) {
           <p>{project.description}</p>
         </div>
         <div className="row ">
-          <a className="github-link" target=" _blank" href={project.gitHubLink}>
-            <div style={{ width: "10rem", textAlign: "center" }} className="text-info rounded bg-dark  p-2 m-1">
-              {" "}
-              GitHub Repo{" "}
+          <a className="github-link" rel="noreferrer noopener" target=" _blank" href={project.gitHubLink}>
+            <div style={{ width: "10rem", textAlign: "center" }} className="text-info rounded bg-dark  p-2 mx-auto m-1">
+              GitHub Repo
             </div>
           </a>
         </div>
@@ -47,7 +44,7 @@ function ProjectListing({ project }) {
         <div className="row">
           {/* <!-- link to project page, link image --> */}
           <div className="hvr-grow mx-auto ">
-            <a target="_blank" href={project.deployedLink}>
+            <a rel="noreferrer noopener" target="_blank" href={project.deployedLink}>
               <img
                 style={{ maxHeight: "12rem" }}
                 className=" project-link-pic border img-fluid"
@@ -61,7 +58,7 @@ function ProjectListing({ project }) {
           </div>
         </div>
       </div>
-    </article>
+    </div>
   );
 }
 
