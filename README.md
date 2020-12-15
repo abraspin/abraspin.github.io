@@ -67,7 +67,7 @@ Just visit [the GitHub Pages deployed app](https://abraspin.github.io/)!
 ---
 
 ## License
-![MIT License](https://github.com/abraspin/employee-directory-app/blob/main/LICENSE)
+![MIT License](https://github.com/abraspin/abraspin.github.io/blob/source-code/LICENSE)
 
 ---
 
