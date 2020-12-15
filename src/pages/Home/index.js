@@ -1,4 +1,5 @@
 import "./style.css";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -37,14 +38,20 @@ function Home() {
 
           <aside className="col-md-6">
             <div className="row my-4">
-              <a className="btn  link-button hvr-grow" href={"Resume"}>
+              {/* <a className="btn  link-button hvr-grow" href={"Resume"}>
                 Resume
-              </a>
+              </a> */}
+              <Link to="/Resume" className="nav-link btn  link-button hvr-grow">
+                Resume
+              </Link>
             </div>
             <div className="row my-4">
-              <a className="btn  link-button hvr-grow" href={"Projects"}>
+              {/* <a className="btn  link-button hvr-grow" href={"Projects"}>
                 Projects
-              </a>
+              </a> */}
+              <Link to="/Projects" className="nav-link btn  link-button hvr-grow">
+                Projects
+              </Link>
             </div>
             <div className="row my-4">
               <a
@@ -67,9 +74,12 @@ function Home() {
               </a>
             </div>
             <div className="row my-4">
-              <a className="btn  link-button hvr-grow" href={"ContactMe"}>
+              {/* <a className="btn  link-button hvr-grow" href={"ContactMe"}>
                 Contact
-              </a>
+              </a> */}
+              <Link to="/ContactMe" className="nav-link btn  link-button hvr-grow">
+                ContactMe
+              </Link>
             </div>
           </aside>
         </div>
