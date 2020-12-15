@@ -36,8 +36,8 @@ Please contact me if you find an issue or have a suggestion for future developme
 ## User Story
 
 >As a developer   
->I want to share my info and portfolio of work 
->So that others can learn more about me! 
+>I want to share my info and portfolio of work  
+>So that others can learn more about me!  
 
 
 ---
