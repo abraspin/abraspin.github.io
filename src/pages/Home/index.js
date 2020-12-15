@@ -37,27 +37,37 @@ function Home() {
 
           <aside className="col-md-6">
             <div className="row my-4">
-              <a className="btn  link-button hvr-grow" href="./pages/Resume.html">
+              <a className="btn  link-button hvr-grow" href={"Resume"}>
                 Resume
               </a>
             </div>
             <div className="row my-4">
-              <a className="btn  link-button hvr-grow" href="./pages/Projects.html">
+              <a className="btn  link-button hvr-grow" href={"Projects"}>
                 Projects
               </a>
             </div>
             <div className="row my-4">
-              <a className="btn  link-button hvr-grow" href="https://www.linkedin.com/in/abrahamspindel/" target="_blank">
+              <a
+                className="btn  link-button hvr-grow"
+                href="https://www.linkedin.com/in/abrahamspindel/"
+                rel="noreferrer noopener"
+                target="_blank"
+              >
                 LinkedIn
               </a>
             </div>
             <div className="row my-4">
-              <a className="btn  link-button hvr-grow" href="https://github.com/abraspin" target="_blank">
+              <a
+                className="btn  link-button hvr-grow"
+                href="https://github.com/abraspin"
+                rel="noreferrer noopener"
+                target="_blank"
+              >
                 GitHub
               </a>
             </div>
             <div className="row my-4">
-              <a className="btn  link-button hvr-grow" href="./pages/Contact.html" target="_blank">
+              <a className="btn  link-button hvr-grow" href={"ContactMe"}>
                 Contact
               </a>
             </div>
