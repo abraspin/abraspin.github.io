@@ -14,8 +14,8 @@ function Home() {
                 <p className="card-text">My name is Abraham Spindel and I am an aspiring full-stack web developer.</p>
                 <p>
                   I will soon complete the
-                  <strong>University of Texas-Austin Full-Stack Coding Bootcamp</strong>. I am a former Manufacturing Engineer for
-                  plastic automotive component manufacturing.
+                  <strong> University of Texas-Austin Full-Stack Coding Bootcamp</strong>. I am a former Manufacturing Engineer
+                  for plastic automotive component manufacturing.
                 </p>
                 <p>
                   I have a B.S. in Mechanical Engineering from the University of Wisconsin-Madison, with a background in composite
