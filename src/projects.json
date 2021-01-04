@@ -1,5 +1,27 @@
 [
   {
+    "title": "React Google Books Search",
+    "technologiesUsed": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "BootstrapCSS",
+      "NodeJS",
+      "ExpressJS",
+      "MongoDB",
+      "JSX", 
+      "ReactJS",
+       "React-Router",
+       "Mongoose",
+       "Heroku",
+       "MongoDBAtlas"
+    ],
+    "description": "Users can search for books via the Google Books API, Save them to a Mongo Database, and Remove saved books from their list.",
+    "screenshot": "/screenshots/google-books-search-screenshot.png",
+    "gitHubLink": "https://github.com/abraspin/google-books-search",
+    "deployedLink": "https://limitless-temple-45340.herokuapp.com/"
+  },
+  {
     "title": "A Blog's Life",
     "technologiesUsed": [
       "HTML",
