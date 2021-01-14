@@ -25,6 +25,10 @@ function MyFooter() {
           <i class="fab fa-github-square fa-2x"></i>
         </a>
       </div>
+      <div className=" footer-copyright copyright-wrapper" style={{ color: 'lightGray' }}>
+
+        AbrahamSpindel@gmail.com
+      </div>
     </footer>
   );
 }
