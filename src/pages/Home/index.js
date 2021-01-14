@@ -2,6 +2,32 @@ import "./style.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function Home() {
+  let technologiesKnown = [ "HTML",
+
+  'BootstrapCSS',
+   'Bulma.CSS',
+   'CSS3',
+   'ES6',
+   'ExpressJS',
+   'HandlebarsJS',
+   'Heroku',
+   'HTML5',
+   'JavaScript',
+   'jQuery',
+   'JSX',
+   'MaterializeCSS',
+ 'Moment.JS',
+   'MongoDB',
+   'MongoDBAtlas',
+   'Mongoose',
+   'MySQL',
+   'NodeJS',
+   'PassportJS',
+'React-Router',
+   'ReactJS',
+   'Chart.JS'
+  ];
+
   return (
     <div>
       <div className="container">
@@ -12,17 +38,19 @@ function Home() {
               <div className="card-body">
                 <h3 className="card-title">Abraham Spindel</h3>
                 <hr></hr>
-                <p className="card-text">My name is Abraham Spindel and I am an aspiring full-stack web developer.</p>
+                <p className="card-text">My name is Abraham Spindel and I am a full-stack web developer.</p>
                 <p>
-                  I will soon complete the
-                  <strong> University of Texas-Austin Full-Stack Coding Bootcamp</strong>. I am a former Manufacturing Engineer
+                  <strong> I earned a certificate in full-stack development from the
+               University of Texas-Austin Full-Stack Coding Bootcamp</strong>. I am a former Manufacturing Engineer
                   for plastic automotive component manufacturing.
                 </p>
                 <p>
                   I have a B.S. in Mechanical Engineering from the University of Wisconsin-Madison, with a background in composite
                   polymers and computer science.
-                </p>
+                 
 
+                </p>
+<p> I am a proven leader with high interpersonal skills and the ability to effectively work and communicate cross-functionally.</p>
                 <hr></hr>
 
                 <div className="row">
@@ -35,13 +63,29 @@ function Home() {
           </div>
 
           {/* <!-- Links to rest of website, right half of this row --> */}
+          <aside className="  col-md-3">
+          <div className = " card mt-1 container card-deck justify-content-center mx-auto py-2"> 
+          <h4 className = "font-italic mt-2" style = {{color:"lightgray"}}>Technologies Known:</h4>
+          {technologiesKnown.map((technology) => {
+            return (
+              <div 
+                style={{ width: "auto", backgroundColor:"lightgray" }}
+                className="border m-2 px-1"
+              >
+                {technology}
+              </div>
+            );
+          })}
+          
+          </div>
 
-          <aside className="col-md-6">
+</aside>
+          <aside className="col-md-3">
             <div className="row my-4">
               {/* <a className="btn  link-button hvr-grow" href={"Resume"}>
                 Resume
               </a> */}
-              <Link to="/Resume" className="nav-link btn  link-button hvr-grow">
+              <Link to="/Resume" className=" btn  link-button hvr-grow">
                 Resume
               </Link>
             </div>
@@ -49,13 +93,13 @@ function Home() {
               {/* <a className="btn  link-button hvr-grow" href={"Projects"}>
                 Projects
               </a> */}
-              <Link to="/Projects" className="nav-link btn  link-button hvr-grow">
+              <Link to="/Projects" className=" btn  link-button hvr-grow">
                 Projects
               </Link>
             </div>
             <div className="row my-4">
               <a
-                className="btn  link-button hvr-grow"
+                className="btn   justify-content-center link-button hvr-grow"
                 href="https://www.linkedin.com/in/abrahamspindel/"
                 rel="noreferrer noopener"
                 target="_blank"
@@ -65,7 +109,7 @@ function Home() {
             </div>
             <div className="row my-4">
               <a
-                className="btn  link-button hvr-grow"
+                className="btn justify-content-center link-button hvr-grow"
                 href="https://github.com/abraspin"
                 rel="noreferrer noopener"
                 target="_blank"
@@ -77,11 +121,12 @@ function Home() {
               {/* <a className="btn  link-button hvr-grow" href={"ContactMe"}>
                 Contact
               </a> */}
-              <Link to="/ContactMe" className="nav-link btn  link-button hvr-grow">
+              <Link to="/ContactMe" className=" btn  link-button hvr-grow">
                 Contact
               </Link>
             </div>
           </aside>
+       
         </div>
       </div>
 
