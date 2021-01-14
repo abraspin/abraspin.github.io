@@ -25,12 +25,10 @@
 
 #email-me-button:hover {
   color: white;
-
 }
 
-
 .link-button {
-  width: 50%;
+  width: 80%;
   height: 75px;
   margin: 0 auto;
   text-align: center;
@@ -39,7 +37,7 @@
   color: rgb(28, 27, 32);
   font-weight: bold;
   background-color: #3c6894;
-  border-color: gray
+  border-color: gray;
 }
 
 /* Grow */
