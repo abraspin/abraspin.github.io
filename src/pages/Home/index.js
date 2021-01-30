@@ -25,7 +25,8 @@ function Home() {
    'PassportJS',
 'React-Router',
    'ReactJS',
-   'Chart.JS'
+   'Chart.JS',
+   'ESLint'
   ];
 
   return (

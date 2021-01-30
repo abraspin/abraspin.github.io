@@ -34,7 +34,8 @@
       "ExpressJS",
       "MySQL",
       "BCrypt",
-      "HandlebarsJS"
+      "HandlebarsJS",
+      "ESLint"
     ],
     "description": "A full-stack weblog app built on NodeJS and powered by Heroku. Share your thoughts, find new friends, and give feedback to other's content in the form of comments and likes!",
     "screenshot": "/screenshots/blogs-life-app-screenshot.png",
