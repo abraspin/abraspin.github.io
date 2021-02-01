@@ -36,9 +36,8 @@
       "JSX",
       "ReactJS",
       "React-Router",
-      "Mongoose",
       "Heroku",
-      "MongoDBAtlas"
+      "MongoDB/Atlas/Mongoose"
     ],
     "description": "Users can search for books via the Google Books API, Save them to a Mongo Database, and Remove saved books from their list.",
     "screenshot": "/screenshots/google-books-search-screenshot.png",
