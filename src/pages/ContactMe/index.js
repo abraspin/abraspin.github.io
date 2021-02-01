@@ -16,6 +16,7 @@ function ContactMe() {
       {/* Embedded google form for contacting me  */}
 
       <iframe
+        title='contact-form-frame'
         className=" contact-me-form"
         style={contactFormStlyle}
         src="https://docs.google.com/forms/d/e/1FAIpQLSezAu7bhHoJc12DVU4D0FrrGjGCMoXUZq1Rqrao5AVqQZVo4A/viewform?embedded=true"
