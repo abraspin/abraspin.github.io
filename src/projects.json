@@ -1,5 +1,29 @@
 [
   {
+    "title": "Short Term Rental Search",
+    "technologiesUsed": [
+      "HTML5",
+      "CSS",
+      "BootstrapCSS",
+      "NodeJS",
+      "JavaScript",
+      "ExpressJS",
+      "MongoDB/Atlas/Mongoose",
+      "bcrypt",
+      "ChartJS",
+      "Cheerio",
+      "Passport",
+      "ReactJS",
+      "JSX",
+      "React-Bootstrap",
+      "Heroku"
+    ],
+    "description": "Full-stack app that uses web-scrapers to aggregate short-term rental listings from Airbnb, Vrbo, and Sonder. Select a city and save favorite listings to your account, click through to origin website, and use the budget tool to plan trip spending.",
+    "screenshot": "/screenshots/str-aggregator-screenshot.png",
+    "gitHubLink": "https://github.com/etorres-revature/Pointy_Goblins",
+    "deployedLink": "https://quiet-tor-69912.herokuapp.com/"
+  },
+  {
     "title": "React Google Books Search",
     "technologiesUsed": [
       "HTML",
@@ -9,12 +33,12 @@
       "NodeJS",
       "ExpressJS",
       "MongoDB",
-      "JSX", 
+      "JSX",
       "ReactJS",
-       "React-Router",
-       "Mongoose",
-       "Heroku",
-       "MongoDBAtlas"
+      "React-Router",
+      "Mongoose",
+      "Heroku",
+      "MongoDBAtlas"
     ],
     "description": "Users can search for books via the Google Books API, Save them to a Mongo Database, and Remove saved books from their list.",
     "screenshot": "/screenshots/google-books-search-screenshot.png",
@@ -33,6 +57,7 @@
       "NodeJS",
       "ExpressJS",
       "MySQL",
+      "Sequelize",
       "BCrypt",
       "HandlebarsJS",
       "ESLint"
@@ -44,7 +69,16 @@
   },
   {
     "title": "Burger Logger",
-    "technologiesUsed": ["HTML", "CSS", "JavaScript", "jQuery", "MaterializeCSS", "NodeJS", "ExpressJS", "MySQL"],
+    "technologiesUsed": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "jQuery",
+      "MaterializeCSS",
+      "NodeJS",
+      "ExpressJS",
+      "MySQL"
+    ],
     "description": " A full-stack deployed app built on NodeJS and powered by Heroku and a home-made ORM. Keep track of every burger you ever wanted to eat, and keep track of which you've had!",
     "screenshot": "/screenshots/burger-app-screenshot.png",
     "gitHubLink": "https://github.com/abraspin/burger",
@@ -68,7 +102,15 @@
   },
   {
     "title": "My Website",
-    "technologiesUsed": ["JSX", "CSS", "Bootstrap", "JavaScript", "ReactJS", "React-Router", "NodeJS"],
+    "technologiesUsed": [
+      "JSX",
+      "CSS",
+      "Bootstrap",
+      "JavaScript",
+      "ReactJS",
+      "React-Router",
+      "NodeJS"
+    ],
     "description": " A portfolio website with my info and projects, built on ReactJS and powered by GitHub Pages. In fact...It's this very site!",
 
     "screenshot": "/screenshots/Bio-Home-Snip.png",
@@ -77,7 +119,14 @@
   },
   {
     "title": "Workday Scheduler",
-    "technologiesUsed": ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "Moment.JS"],
+    "technologiesUsed": [
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "JavaScript",
+      "jQuery",
+      "Moment.JS"
+    ],
     "description": "   A super simple daily calendar app. Save your activities to the hour - line items are color coded by the time of day!",
     "screenshot": "/screenshots/workday-scheduler-screenshot.png",
     "gitHubLink": "https://github.com/abraspin/Work-Day-Scheduler",
