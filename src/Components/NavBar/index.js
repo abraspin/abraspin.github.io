@@ -1,11 +1,10 @@
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { useEffect, useState } from "react";
 
 function NavBar() {
   // TODO: pass in active page prop to highlight that one in the nav bar
 
-  const [pageSelected, setPageSelected] = useState("");
+  // const [pageSelected, setPageSelected] = useState("");
 
   //   useEffect(() => {
   //     console.log(
@@ -43,7 +42,7 @@ function NavBar() {
             <ul className="navbar-nav  float-right">
               <li className="nav-item ">
                 {/* <a className="nav-link" href="../index.html">
-                TODO:TODO:TODO: ternary operator? Switch? Map and make each link a component? aw yeah TODO:TODO:TODO:  Home <span className="sr-only">(current)</span>
+                TODO:ternary operator? Switch? Map and make each link a component?  TODO:  Home <span className="sr-only">(current)</span>
                 </a> */}
                 <Link to="/" className="nav-link">
                   Home

@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import ProjectListing from "./Components/ProjectListing";
@@ -8,7 +8,7 @@ import projectsList from "./projects.json";
 import NavBar from "./Components/NavBar";
 import ContactMe from "./pages/ContactMe";
 import Resume from "./pages/Resume";
-import { useEffect, useState, Fragment } from "react";
+import { Fragment } from "react";
 
 function App() {
   //TODO: following code for passing active page to navbar, currently non-functional
