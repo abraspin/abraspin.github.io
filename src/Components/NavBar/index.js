@@ -18,64 +18,66 @@ function NavBar() {
   return (
     // Navigation Bar, containing links to Home page, Resume page, Projects page, and contact me page
 
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div className="col-md-6 pl-5">
-        <a className="navbar-brand" href={"/"}>
-          Abraham Spindel
-        </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-      </div>
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between">
+      {/* <div className="col-md-6"> */}
+      <a className="navbar-brand " href={"/"}>
+
+        {/* <img src='/assets/logo.png' alt="Home Logo"></img> */}
+        Abraham Spindel
+      </a>
+      <button
+        className="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span className="navbar-toggler-icon"></span>
+      </button>
+      {/* </div> */}
       {/* Navigation menu items  */}
-      <div className="col-md-6 float-right pr-5">
-        <div className="row float-right ">
-          <div className="collapse navbar-collapse float-right" id="navbarSupportedContent">
-            <ul className="navbar-nav  float-right">
-              <li className="nav-item ">
-                {/* <a className="nav-link" href="../index.html">
+      {/* <div className="col-md-6 float-right "> */}
+      {/* <div className="row float-right "> */}
+      <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul className="navbar-nav">
+          <li className="nav-item ">
+            {/* <a className="nav-link" href="../index.html">
                 TODO:ternary operator? Switch? Map and make each link a component?  TODO:  Home <span className="sr-only">(current)</span>
                 </a> */}
-                <Link to="/" className="nav-link">
-                  Home
+            <Link to="/" className="nav-link">
+              Home
                 </Link>
-              </li>
-              <li className="nav-item">
-                {/* <a className="nav-link" href="./Resume.html">
+          </li>
+          <li className="nav-item">
+            {/* <a className="nav-link" href="./Resume.html">
                   Resume
                 </a> */}
-                <Link to="/Resume" className="nav-link">
-                  Resume
+            <Link to="/Resume" className="nav-link">
+              Resume
                 </Link>
-              </li>
-              <li className="nav-item">
-                {/* <a className="nav-link" href="./Projects.html">
+          </li>
+          <li className="nav-item">
+            {/* <a className="nav-link" href="./Projects.html">
                   Projects
                 </a> */}
-                <Link to="/Projects" className="nav-link">
-                  Projects
+            <Link to="/Projects" className="nav-link">
+              Projects
                 </Link>
-              </li>
-              <li className="nav-item ">
-                {/* <a className="nav-link" href="./Contact.html">
+          </li>
+          <li className="nav-item ">
+            {/* <a className="nav-link" href="./Contact.html">
                   Contact Me
                 </a> */}
-                <Link to="/ContactMe" className="nav-link">
-                  Contact Me
+            <Link to="/ContactMe" className="nav-link">
+              Contact Me
                 </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
+      {/* </div> */}
+      {/* </div> */}
     </nav>
   );
 }
