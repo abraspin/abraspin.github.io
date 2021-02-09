@@ -15,7 +15,7 @@
 #email-me-button {
   position: relative;
   text-align: center;
-  width: 30%;
+  width: 20%;
   color: rgb(28, 27, 32);
   font-weight: bold;
   margin: 0 auto;
@@ -28,16 +28,30 @@
 }
 
 .link-button {
-  width: 80%;
-  height: 75px;
-  margin: 0 auto;
+  font-size: 32px;
   text-align: center;
   vertical-align: middle;
+  color: white;
+
+  background: gray;
+  border-radius: 40px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  cursor: pointer;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 0.5rem;
+
+  /* width: 80%;
+  height: 75px;
+  margin: 0 auto;
+
   font-size: 32px;
   color: rgb(28, 27, 32);
   font-weight: bold;
   background-color: #3c6894;
-  border-color: gray;
+  border-color: gray; */
 }
 
 /* Grow */
@@ -58,4 +72,44 @@
 .hvr-grow:active {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+#above-the-fold h1 {
+  margin-top: 5vh;
+}
+
+#fa-link-icons {
+  padding: 0 10rem 0 10rem;
+}
+.link-button {
+  background-color: navy;
+}
+
+@media only screen and (max-width: 768px) {
+  #above-the-fold h1 {
+    margin-top: 1rem;
+  }
+  #home-page-links-container {
+    display: none !important;
+  }
+  #fa-link-icons {
+    padding: 0;
+  }
+  #fa-link-icons i {
+    margin-bottom: 4rem;
+  }
+  #about-me-jumbotron {
+    margin-top: 0;
+  }
+  #about-me-component hr {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  /* footer {
+      align-items: center;
+      flex-direction: column;
+  }
+  .copyright-wrapper {
+      margin-bottom: 1rem;
+  } */
 }
