@@ -3,12 +3,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import ProjectListing from "./Components/ProjectListing";
 import Home from "./pages/Home";
+import Projects from "./pages/Projects";
 import MyFooter from "./Components/MyFooter";
 import projectsList from "./projects.json";
 import NavBar from "./Components/NavBar";
 import ContactMe from "./pages/ContactMe";
 import Resume from "./pages/Resume";
 import { Fragment } from "react";
+// import cool-background.png from '../public/images/cool-background.png'
 
 function App() {
   //TODO: following code for passing active page to navbar, currently non-functional
@@ -25,28 +27,26 @@ function App() {
 
   return (
     <Fragment>
-      <div className="content">
+      <div className="content" >
         <Router>
           <NavBar> </NavBar>
+          <Route exact path="/Resume">
+            <Resume />
+          </Route>
+          <Route exact path="/ContactMe">
+            <ContactMe />
+          </Route>
 
-          {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-          <Switch>
-            <Route exact path="/Resume">
-              <Resume />
-            </Route>
-            <Route exact path="/Projects">
-              {projectsList.map((project) => {
-                return <ProjectListing project={project}></ProjectListing>;
-              })}
-            </Route>
-            <Route exact path="/ContactMe">
-              <ContactMe />
-            </Route>
-            <Route exact path="/">
-              <Home />
-            </Route>
-          </Switch>
+          {/* <div id="above-the-fold" style={{ height: '100vh', backgroundImage: "url('/images/cool-background.png')", backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} > */}
+          <Home />
+          {/* </div> */}
+          <div>
+
+          </div>
+
+          <Projects></Projects>
+
+
         </Router>
       </div>
       <MyFooter></MyFooter>
