@@ -17,7 +17,7 @@
   transform: scale(1.1);
 }
 
-.jumbotron {
+.project-listing {
   background-color: #3c6894;
   min-height: 15rem;
   box-shadow: -4px 4px 1px 0px rgba(255, 255, 255, 0.5);
@@ -27,7 +27,7 @@
   margin: 0 auto;
   margin-bottom: 2rem;
   margin-top: 2rem;
-  width: 60%;
+  /* width: 60%; */
   color: #fff;
 }
 
